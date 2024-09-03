@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="3.css">
+</head>
+<body>
+    <div id="game-container" class="center">
+        <div id="start-screen">
+            <h1>Tic-Tac-Toe</h1>
+            <button id="play-button">Play</button>
+        </div>
+
+        <div id="mode-selection" class="hidden">
+            <h2>Select Mode</h2>
+            <button id="vs-player">VS Player</button>
+            <button id="vs-computer">VS Computer</button>
+            <button id="back-button-mode">Back</button>
+        </div>
+
+        <div id="difficulty-selection" class="hidden">
+            <h2>Select Difficulty</h2>
+            <button id="easy">Easy</button>
+            <button id="hard">Hard</button>
+            <button id="back-button-difficulty">Back</button>
+        </div>
+
+        <div id="symbol-selection" class="hidden">
+            <h2>Select Your Symbol</h2>
+            <button id="choose-x">X</button>
+            <button id="choose-o">O</button>
+            <button id="back-button-symbol">Back</button>
+        </div>
+
+        <div id="game-board" class="hidden">
+            <h2 id="game-status"></h2>
+            <div class="grid">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+            <div id="score-board">
+                <p>Total Wins: <span id="win-count">0</span></p>
+                <p>Total Losses: <span id="loss-count">0</span></p>
+                <p>Total Ties: <span id="tie-count">0</span></p>
+            </div>
+        </div>
+
+        <div id="end-screen" class="hidden">
+            <h2 id="result"></h2>
+            <button id="retry-button">Retry</button>
+            <button id="home-button">Home</button>
+            <button id="quit-button">Quit</button>
+        </div>
+    </div>
+
+    <script src="3.js"></script>
+</body>
+</html>
